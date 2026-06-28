@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a237e" />
+  <meta name="description" content="Class 8 PECTTA 2026-27 Mathematics MCQ Practice Papers" />
+  <title>Class 8 Math – PECTTA 2026-27</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SPLASH / HOME ===== -->
+  <div id="homeScreen" class="screen active">
+    <div class="home-hero">
+      <div class="hero-badge">PECTTA 2026-27</div>
+      <h1>Class 8<br><span>Mathematics</span></h1>
+      <p class="hero-sub">Important MCQs — 10 Practice Papers</p>
+    </div>
+
+    <div class="paper-grid">
+      <h2 class="section-title">📚 Chapter Wise Papers</h2>
+      <div class="cards" id="chapterCards"></div>
+
+      <h2 class="section-title">📋 Full Syllabus Papers</h2>
+      <div class="cards" id="fullCards"></div>
+    </div>
+
+    <footer class="home-footer">Prepared for PECTTA Exam 2026-27 &nbsp;|&nbsp; Class 8</footer>
+  </div>
+
+  <!-- ===== QUIZ SCREEN ===== -->
+  <div id="quizScreen" class="screen">
+    <div class="quiz-header">
+      <button id="backBtn" class="back-btn">&#8592; واپس</button>
+      <div class="quiz-meta">
+        <span id="paperTitle" class="paper-title-hdr"></span>
+        <span id="progressText" class="progress-text"></span>
+      </div>
+    </div>
+
+    <div class="progress-bar-wrap">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div class="quiz-body">
+      <div id="questionCard" class="question-card">
+        <p id="qNumber" class="q-number"></p>
+        <p id="qText" class="q-text"></p>
+        <div id="optionsContainer" class="options-container"></div>
+        <div id="explanation" class="explanation hidden"></div>
+      </div>
+
+      <div class="quiz-nav">
+        <button id="prevBtn" class="nav-btn" disabled>&#8592; پچھلا</button>
+        <button id="nextBtn" class="nav-btn">اگلا &#8594;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESULT SCREEN ===== -->
+  <div id="resultScreen" class="screen">
+    <div class="result-card">
+      <div class="result-icon" id="resultIcon">🎉</div>
+      <h2 id="resultTitle">نتیجہ</h2>
+      <div class="score-circle">
+        <span id="scoreNum">0</span>
+        <small>/ <span id="scoreTotal">0</span></small>
+      </div>
+      <p id="scorePercent" class="score-percent"></p>
+      <p id="resultMsg" class="result-msg"></p>
+
+      <div class="result-stats">
+        <div class="stat correct-stat"><span id="statCorrect">0</span><small>درست</small></div>
+        <div class="stat wrong-stat"><span id="statWrong">0</span><small>غلط</small></div>
+        <div class="stat skip-stat"><span id="statSkip">0</span><small>چھوڑا</small></div>
+      </div>
+
+      <div class="result-actions">
+        <button id="reviewBtn" class="btn-review">جائزہ لیں</button>
+        <button id="retryBtn" class="btn-retry">دوبارہ کوشش</button>
+        <button id="homeBtn" class="btn-home">ہوم پر جائیں</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== REVIEW SCREEN ===== -->
+  <div id="reviewScreen" class="screen">
+    <div class="review-header">
+      <button id="reviewBackBtn" class="back-btn">&#8592; واپس</button>
+      <h2>سوالات کا جائزہ</h2>
+    </div>
+    <div id="reviewList" class="review-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
