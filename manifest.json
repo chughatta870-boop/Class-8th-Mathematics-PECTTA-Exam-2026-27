@@ -1,0 +1,36 @@
+{
+  "name": "Class 8 Math – PECTTA 2026-27",
+  "short_name": "Math MCQ",
+  "description": "Class 8 PECTTA Mathematics Important MCQ Practice Papers 2026-27",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a237e",
+  "theme_color": "#1a237e",
+  "orientation": "portrait-primary",
+  "lang": "ur",
+  "dir": "rtl",
+  "categories": ["education"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Chapter 1 Paper",
+      "short_name": "Paper 1",
+      "url": "./index.html",
+      "description": "Rational Numbers Paper"
+    }
+  ]
+}
